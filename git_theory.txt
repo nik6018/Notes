@@ -37,13 +37,13 @@ The Basics of the GIT
 				   (here the snapshot are permenantly commit to the DB)
 
 		Summary :
-					The basic Git workflow goes something like this:
+				The basic Git workflow goes something like this:
 
-						a.You modify files in your working directory.
+					a.You modify files in your working directory.
 
-						b.You stage the files, adding snapshots of them to your staging area.
+					b.You stage the files, adding snapshots of them to your staging area.
 
-						c.You do a commit, which takes the files as they are in the staging area and stores that						  snapshot permanently to your Git directory.
+					c.You do a commit, which takes the files as they are in the staging area and stores that						  snapshot permanently to your Git directory.
 		
 		
 	
