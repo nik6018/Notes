@@ -1,0 +1,50 @@
+The Basics of the GIT
+--------------------
+	
+	1. Git is based on the Graph theroy 
+		=>Nodes : as Commits
+		=>Edges : as references or branches
+
+	2. Most VCS only store the recent version of the file 
+	   =>Git thinks of its data more like a set of snapshots of a miniature 
+		 filesystem. 
+	   =>Every time you commit, or save the state of your project in Git, 
+         it basically takes a picture of what all your files look like at that 
+         moment and stores a reference to that snapshot. 
+	   =>To be efficient, if files have not changed, Git doesn.t store the file again, 
+		 just a link to the previous identical file it has already stored. 
+		 Git thinks about its data more like a stream of snapshots.
+	 Ref to this image (http://git-scm.com/book/en/v2/book/01-introduction/images/deltas.png) 
+	 Ref to this image (http://git-scm.com/book/en/v2/book/01-introduction/images/snapshots.png)
+	
+	3. In git everthing is local and as the changes to the remote repo doesnt need to commited
+	   immedietly so the working offline is very easy and require to push only when it is required
+
+	4. Git Mainly has 3 states
+		-----Working-------Staging-------.git/repo--------
+		
+		working => this is the state when you are modifying the files after a checkout  and havent done any 
+				   git operation
+
+		staging => this state is achieved when modification to the files are been done
+				   and they are queqed up to commit 
+				   OR
+				   (here the snapshot of the entire  repo is also taken)
+
+		git dir => here the queqed up files which are ready to commit are commit permenantly commit to the
+				   to the the DB of the git
+				   OR
+				   (here the snapshot are permenantly commit to the DB)
+
+		Summary :
+					The basic Git workflow goes something like this:
+
+						a.You modify files in your working directory.
+
+						b.You stage the files, adding snapshots of them to your staging area.
+
+						c.You do a commit, which takes the files as they are in the staging area and stores that						  snapshot permanently to your Git directory.
+		
+		
+	
+	
