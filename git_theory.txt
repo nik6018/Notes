@@ -43,7 +43,8 @@ The Basics of the GIT
 
 					b.You stage the files, adding snapshots of them to your staging area.
 
-					c.You do a commit, which takes the files as they are in the staging area and stores that						  snapshot permanently to your Git directory.
+					c.You do a commit, which takes the files as they are in the staging area and stores that 
+                                          snapshot permanently to your Git directory.
 		
 		
 	
