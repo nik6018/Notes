@@ -45,7 +45,30 @@ The Basics of the GIT
 
 					c.You do a commit, which takes the files as they are in the staging area and stores that 
                                           snapshot permanently to your Git directory.
-		
-		
 	
+					
+				Remember that each file in your working directory can be in one of two states: tracked or untracked. 
+				Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged. 
+				Untracked files are everything else . any files in your working directory that were not in your last 
+				snapshot and are not in your staging area. 
+				When you first clone a repository, all of your files will be tracked and unmodified because you just 
+				checked them out and haven.t edited anything.	
+				Ref(https://git-scm.com/book/en/v2/book/02-git-basics/images/lifecycle.png)
+	
+Commands
+--------
+	
+	git status => shows the current branch and shows the modified files and staged files
+		      Untracked basically means that Git sees a file you didn.t have in the previous snapshot (commit)
+	git diff => gives all the differences between the staged file and the previous snapshot of the file
+	git commit => this will commit all the files that were staged (remember)and not the changes that were modified after
+		      staging the file . It opens ur default editor and shows the git status after commit . if we pass -v as 
+		      as extra param to the command it also store the diff of the files between the previous and the current
+		      snapshot .
+	
+	
+
+
+
+
 	

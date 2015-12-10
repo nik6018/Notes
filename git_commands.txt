@@ -3,9 +3,9 @@ Essential Commands
 
 	Install => yum install git
 	Set Username => git config --global user.name "yourname"
-	Set Email ID => git config --global user.email "your email"
+	Set Email ID => git config --global user.email "your email"	
+	Check settings => git config --list (If you want individual key then type git config keyname )
+	Help => git help command-name	
+	clone command => git clone [https url]
 	
-
-	
-
 
