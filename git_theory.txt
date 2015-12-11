@@ -76,7 +76,10 @@ Commands
 
 	git mv => mainly used to rename files , this command is very usefull as it renames the file , removes the old file 
 		  from the staging area and then add the renamed file to the staging area 
-
+	
+	git log => show the heirachy of the commit history
+		   git log -p : shows the diff
+		   git log -diff  : shows the number of additions and deletions
 
 
 
