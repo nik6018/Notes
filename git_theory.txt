@@ -60,15 +60,31 @@ Commands
 	
 	git status => shows the current branch and shows the modified files and staged files
 		      Untracked basically means that Git sees a file you didn.t have in the previous snapshot (commit)
+
 	git diff => gives all the differences between the staged file and the previous snapshot of the file
+
 	git commit => this will commit all the files that were staged (remember)and not the changes that were modified after
-		      staging the file . It opens ur default editor and shows the git status after commit . if we pass -v as 
-		      as extra param to the command it also store the diff of the files between the previous and the current
+		      staging the file . It opens ur default editor and shows the git status after commit . 
+		      git commit -v :  it also store the diff of the files between the previous and the current
 		      snapshot .
-	
-	
+
+	git rm => removes the file from the staging area and also the working directory so when u do git status next time the 
+		  file wont show up as an untracked file.
+		  git rm --cached filename.ext : removes the file from the .git directory only and not the working directory
+		  git rm log/\*.log removes all the .log files in the log directory
+		  git rm \~ deletes all the files ending with ~ sign
+
+	git mv => mainly used to rename files , this command is very usefull as it renames the file , removes the old file 
+		  from the staging area and then add the renamed file to the staging area 
 
 
 
 
-	
+
+
+
+
+
+
+
+
