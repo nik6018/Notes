@@ -100,4 +100,11 @@ Commands
 		      git remote rename [old sudo name] [new sudo name] : renames the sudo name of the remote
 		
 
+	git tag => this is to tag a certain release in the graph of a software .tags are basically pointer to a certain 
+		   commit in the graph and they never change and always point to the same commit even if the branch moves forward
+		   and that pointer can also be given a serial no(v1.4)they are of two types.
 
+		   LightWeight Tags : they are mostly used to temp tag on branch (example ->git tag "1.2.3W")
+		   Annotated Tags : Used to indicate a certain release of a software and contain lots of info when the
+				    branch is  tagged (example ->git tag -a v1.4 -m "tag message")
+		
