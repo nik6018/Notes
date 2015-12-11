@@ -82,12 +82,22 @@ Commands
 		   git log -diff  : shows the number of additions and deletions
 
 
+	git commit --amend => this is used too group multiple commits into one . if you wan to change ur commit message then
+			      use this and change the message and this will override the previous snapshot. OR
+			      if you forget to stage a file during commit then stage the file and use this command
+			      and type the new commit mesage
 
 
+	git reset HEAD file_name => this is  used to unstage the file if you add it accidently
+	
+	git checkout -- filename => if you modify a file and now want the file which was unmodified 
 
-
-
-
-
+	git remote => this command is used to see the remote repos name (By default it is origin)
+		      git remote -v : shows the name and the url of the remote repos
+		      if you are insterested in cloning a repo with the original "origin" name then use
+		      git remote [sudo name] [URL] : so always do (git push [sudo name] [branch name])
+		      git remote show [sudo name] : shows more info about the remote
+		      git remote rename [old sudo name] [new sudo name] : renames the sudo name of the remote
+		
 
 
