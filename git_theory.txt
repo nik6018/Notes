@@ -127,10 +127,11 @@ Git Branching
 
 	Commit Process  :
 	+++++++++++++++++
-	So when git add is done git creates the checksums(blobs) of all the files in that snapshot and when git commit is done then git creates a root node 
-	which points to all the files that were staged and stores which blob corresponds to which file and finally git also creates a pointer which points
-	to this root node it contains all the metadata of the commit (like:author,email,etc).thus every commit consist of one metadata object which points to
-	the root node which holds the blobs of all the files which have been staged and the files themselves which consist of the individual blobs of their files
+	So when git add is done git creates the checksums(blobs) of all the files in that snapshot and when git commit is done 
+	then git creates a root node which points to all the files that were staged and stores which blob corresponds to which file and 
+	finally git also creates a pointer which points to this root node it contains all the metadata of the commit (like:author,email,etc).
+	thus every commit consist of one metadata object which points to the root node which holds the blobs of all the files which have been staged 
+	and the files themselves which consist of the individual blobs of their files
 	Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/commit-and-tree.png)
 	Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/commits-and-parents.png)
 	
