@@ -107,4 +107,46 @@ Commands
 		   LightWeight Tags : they are mostly used to temp tag on branch (example ->git tag "1.2.3W")
 		   Annotated Tags : Used to indicate a certain release of a software and contain lots of info when the
 				    branch is  tagged (example ->git tag -a v1.4 -m "tag message")
+
+	git branch [branch_name] => this creates a branch but doesnt switch to that branch
+	
+	git checkout [branch_name] => moves the HEAD pointer to the specified branch
+
+Git Branching
+-------------	
+
+	Remember that git stores data as series of snapshot , and this is how it makes sense of the entire commit history
+	unlike other SCM is doesnt store only the last changed text .
+	
+	Overview of an commit : 
+	+++++++++++++++++++++++
+	When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. 
+	This object also contains the author.s name and email, the message that you typed, 
+	and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, 
+	one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.	
+
+	Commit Process  :
+	+++++++++++++++++
+	So when git add is done git creates the checksums(blobs) of all the files in that snapshot and when git commit is done then git creates a root node 
+	which points to all the files that were staged and stores which blob corresponds to which file and finally git also creates a pointer which points
+	to this root node it contains all the metadata of the commit (like:author,email,etc).thus every commit consist of one metadata object which points to
+	the root node which holds the blobs of all the files which have been staged and the files themselves which consist of the individual blobs of their files
+	Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/commit-and-tree.png)
+	Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/commits-and-parents.png)
+	
+	Branch :
+	++++++++
+	A branch in Git is simply a lightweight movable pointer to one of these commits. 
+	The default branch name in Git is master. 
+	As you start making commits, you.re given a master branch that points to the last commit you made. 
+	Every time you commit, it moves forward automatically.
 		
+	Cheap Branching :
+	+++++++++++++++++
+	Because a branch in Git is in actuality a simple file that contains the 40 character SHA-1 checksum of the commit it points to, 
+	branches are cheap to create and destroy. 
+	Creating a new branch is as quick and simple as writing 41 bytes to a file (40 characters and a newline).	
+	
+
+	
+
