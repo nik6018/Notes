@@ -148,6 +148,19 @@ Git Branching
 	branches are cheap to create and destroy. 
 	Creating a new branch is as quick and simple as writing 41 bytes to a file (40 characters and a newline).	
 	
-
 	
+	Fast Forwading vs Recursively Merging
+	+++++++++++++++++++++++++++++++++++++
+	FF : A merge is said to be FF merge when there is no snapshot created and instead the master pointer is moved to the latest commit
+ 	     "when you try to merge one commit with a commit that can be reached by following the first commit.s history, 
+	     Git simplifies things by moving the pointer forward because there is no divergent work to merge together . this is called a .fast-forward.."
+             Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-branching-4.png)
+	     Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-branching-5.png)	
+	R : Recursive merge involves creating a new snapshot in the branch using a strategy called three way commit 
+	    where the the two branches that are to be merged and the common ancestor of the two branch is taken into consideration and new commit is 
+	    created based on that and then the master points to it.here two distinct branches are to be commited thats why we cannot simply
+	    move the pointer ahead like FF
+	    Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-merging-1.png)
+	    Ref Image(https://git-scm.com/book/en/v2/book/03-git-branching/images/basic-merging-2.png)
+	    
 
