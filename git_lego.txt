@@ -1,0 +1,40 @@
+All the files and the branchs and the tree structure is controlled by the .git folder
+    it stores all the files and makes the req changes if the branch changes
+    all the commits are stores in the object folder wih the commit id 
+    it also consists of the HEAD
+
+When you git add a file commit obj is created but it still lacks an ID 
+    but the HEAD still points to it , you can anytime reset the head to the previous commit
+
+After the commit the ID is generated and the active branch pointer moves to that commit obj
+
+The Commit ID is always unique and identifies an commit uniquely (each commit is a snapshot of ur working directory also called as (snapshot))
+
+THe commit ID is genrated by the Following : The source tree of the commit (which unravels to all the subtrees and blobs)
+                                             The parent commit sha1
+                                             The author info
+                                             The committer info (right, those are different!)
+                                             The commit message
+                                                
+                                                    OR
+                                            The content in the directory
+                                            author info
+                                            date
+                                            log <-- still not sure of that one
+                                            committer info
+                                            parent commit
+
+Git consist of these branch pointer that decide which branch is active thus allowing it to commit to that branch
+
+Remote tracking branch is genrated when we pull from the remote which keep track where the remote branch is with respect to the local branch
+
+Tag are pointer which dont move and stay at the same place( move if done with --hard param) they are generally used to denote software releases
+    tags dont sync themselves with remote and req explicit pushing 
+
+Rebase is used to  move down to a specific parent and then create a new commit obj and then discard the obj that are above that parent 
+    this is done if some commits are not proper 
+    dont rebase after push it will funck up every thing
+
+Remote and local git sync each other via ID's and if the ID are diff .. then parent is checked done until a comman parent is found
+
+
