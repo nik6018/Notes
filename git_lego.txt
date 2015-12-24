@@ -37,4 +37,4 @@ Rebase is used to  move down to a specific parent and then create a new commit o
 
 Remote and local git sync each other via ID's and if the ID are diff .. then parent is checked done until a comman parent is found
 
-
+HEAD pointer is always present on the active branch , and moves to the cehckout branch  if done
