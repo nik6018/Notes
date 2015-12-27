@@ -1,0 +1,67 @@
+
+Time Complexity
+++++++++++++++++
+
+	Description
+	------------ 
+		
+		->	It is the generalized time req for the algorithm to complete it is represented by Big Oh (n)
+
+		->  O(n) is by no means the shortest time taken for an alogrithm to complete 
+		   
+		    actually it measures the time taken for the algo to complete in the worst case 
+
+		   	thus Big Oh doesnt deduce any benchmark of an algo 
+
+		-> 	While calculating the the complexity the constant steps which dont get repeated shouldnt 
+			
+		  	be considered in the final complexity.
+
+		  	Time complexity is mostly  but not always depended on the input provided to the algo 
+
+		  	thus in some cases the higher time complexity algo perform better than the lower time 
+
+		  	complexity algo due to the variation of the input 
+
+
+	Types of Complexity 
+	--------------------
+
+		1. Linear          ==>   O(n) 
+		2. Quadratic	   ==>   O(n^2)	
+		3. Logarithmic 	   ==>   O(log n)	
+		4. Exponential	   ==>	 O(e^n)
+
+
+		Linear : A algorithm is said to linear when the time taken to complete the operations is 
+				directly proportinal to the input size 
+				if the ip size is 10 then it takes 10 steps to complete the operation
+				and if the size is 100 then it takes 100 steps to complete ..... thus the notion of linear
+
+		Quadratic : Here the Algorithm takes the sqaure of the input size provided thus the there is 
+					qaudratically proportional to the input size
+					if the input size is 4 then the algo takes around 8 units of time to complete	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
