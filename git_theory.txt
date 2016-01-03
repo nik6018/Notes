@@ -112,11 +112,13 @@ Commands
 	
 	git checkout [branch_name] => moves the HEAD pointer to the specified branch
 	
-	git push [remote] [branch_name] : [branch_name][optinal] => this command is used to push local changes to the remote branch thus syncing both them , 
-							            optional branch name can be specified if the local and the remote branch have different names
+	git push [remote] [branch_name] : [branch_name][optinal] => this command is used to push local changes to the remote branch,
+                                    thus syncing both them , 
+							        optional branch name can be specified if the local and the remote branch have different names
 								    git remote origin master : pushes changes from the local master branch to the remote master branch
 								    git remote origin [nik] : [pnikremote] : this command pushes the changes done,
 								    in the nik local branch to the remote nikremote branch(here the local and the remote branch have diff names)
+                                    NOTE : before starting any work always do a git pull (imp)
 Git Branching
 -------------	
 
